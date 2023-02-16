@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "ex_10172,c": "c"
+        "ex_10172,c": "c",
+        "stdio.h": "c"
     }
 }

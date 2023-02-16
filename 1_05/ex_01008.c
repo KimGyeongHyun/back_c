@@ -3,7 +3,7 @@
 int main() {
     int a, b;
     scanf("%d %d", &a, &b);
-    printf("%d", (double)a/b);
+    printf("%.15f", (double)a/b);
 
     return 0;
 }
