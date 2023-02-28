@@ -11,21 +11,14 @@ int pred_n(int a) {
 }
 
 int is_not_self(int n) {
-    if (n < 10) {
-        if (n%2 == 0) return 0;
-        else return 1;
-    }
-    if (n < 30) {
-        if (n==20) return 1;
-        else return 0;
-    }
 
     int index = n / 10;
     int pre_cr = pred_n(index);
 
-    while (pre_cr + 30 >= n && index != 0) {
+    while (pre_cr + 25 > n && 0 <= index) {
+
         if (pre_cr <= n && n <= pre_cr + 18 && (pre_cr - n) %2==0) return 0;
-        pre_cr  = pred_n(index--);
+        pre_cr  = pred_n(--index);
     }
 
     return 1;
