@@ -15,7 +15,6 @@ int main() {
         else {
             scanf("%d %d", &x, &y);
             tri_v += get_tri_v(x1, y1, x2, y2, x, y);
-            // printf("%d %d %d %d %d %d %.1f\n", x1, y1, x2, y2, x, y, tri_v);
             x2 = x, y2 = y;
         }
     }
